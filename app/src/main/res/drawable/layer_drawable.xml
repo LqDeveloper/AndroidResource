@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- //一个layer-list可以包含多个item，而每个item则表示一个Drawable。
+<item
+    //android:drawable表示Drawable资源，可以引用已有的drawable资源，也可在item中自定义Drawable
+    //默认情况下，layer-list中的Drawable都会被缩放至View的大小，因此在必要的情况下，我们可以使用android:gravity属性来控制图片的展示效果，防止图片变形或者被过度拉伸。
+    android:drawable="@[package:]drawable/drawable_resource"
+    //android:id资源ID，一个为这个item定义的唯一的资源ID。 使用:”@+id/name”.这样的方式。
+    //从而可以检索或修改这个drawable通过下面的方式：View.findViewById() or Activity.findViewById().
+    android:id="@[+][package:]id/resource_name"
+    //android:top表示Drawable相对于View的顶部的偏移量，单位像素
+    android:top="dimension"
+    //android:right表示Drawable相对于View的右边的偏移量，单位像素
+    android:right="dimension"
+    //android:bottom表示Drawable相对于View的底部的偏移量，单位像素
+    android:bottom="dimension"
+    //android:left表示Drawable相对于View的左边的偏移量，单位像素
+    android:left="dimension" />-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+    <item android:bottom="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</layer-list>

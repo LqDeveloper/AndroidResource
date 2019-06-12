@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="10dp"></corners>
+    <solid android:color="@color/myGreen"></solid>
+    <stroke
+        android:width="3dp"
+        android:color="@color/myred"></stroke>
+    <!--<padding android:left="30dp"></padding>-->
+    <!--<size android:width="20dp"></size>-->
+    <!--<gradient-->
+    <!--android:centerColor="@color/myred"-->
+    <!--android:endColor="@color/myGreen"-->
+    <!--android:startColor="@color/myGreen"></gradient>-->
+</shape>
